@@ -123,44 +123,44 @@ class GameBoardActivity: AppCompatActivity() {
 
     fun setDiceButtonIconBottom(number: Int) {
         when (number) {
-            1 -> diceButtonBottom.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_one_gold))
-            2 -> diceButtonBottom.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_two_gold))
-            3 -> diceButtonBottom.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_three_gold))
-            4 -> diceButtonBottom.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_four_gold))
-            5 -> diceButtonBottom.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_five_gold))
-            6 -> diceButtonBottom.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_six_gold))
+            1 -> diceButtonBottom.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.one))
+            2 -> diceButtonBottom.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.two))
+            3 -> diceButtonBottom.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.three))
+            4 -> diceButtonBottom.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.four))
+            5 -> diceButtonBottom.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.five))
+            6 -> diceButtonBottom.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.six))
         }
     }
 
     fun setDiceButtonIconTop(number: Int) {
         when (number) {
-            1 -> diceButtonTop.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_one_silver))
-            2 -> diceButtonTop.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_two_silver))
-            3 -> diceButtonTop.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_three_silver))
-            4 -> diceButtonTop.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_four_silver))
-            5 -> diceButtonTop.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_five_silver))
-            6 -> diceButtonTop.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_six_silver))
+            1 -> diceButtonTop.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.one))
+            2 -> diceButtonTop.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.two))
+            3 -> diceButtonTop.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.three))
+            4 -> diceButtonTop.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.four))
+            5 -> diceButtonTop.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.five))
+            6 -> diceButtonTop.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.six))
         }
     }
 
     fun setDiceIconInColumn(column: Int, index: Int) {
         if(controller.currentPlayer == player) {
             when (controller.currentDiceNumber) {
-                1 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_one_gold))
-                2 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_two_gold))
-                3 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_three_gold))
-                4 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_four_gold))
-                5 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_five_gold))
-                6 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_six_gold))
+                1 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.one))
+                2 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.two))
+                3 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.three))
+                4 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.four))
+                5 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.five))
+                6 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.six))
             }
         } else {
             when (controller.currentDiceNumber) {
-                1 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_one_silver))
-                2 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_two_silver))
-                3 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_three_silver))
-                4 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_four_silver))
-                5 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_five_silver))
-                6 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_six_silver))
+                1 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.one))
+                2 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.two))
+                3 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.three))
+                4 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.four))
+                5 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.five))
+                6 -> controller.currentPlayer.board.allDiceAreas[column][index].setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.six))
             }
         }
     }
@@ -169,24 +169,24 @@ class GameBoardActivity: AppCompatActivity() {
         if(enemy == player) {
             enemy.board.allDiceAreas[column].forEachIndexed { index, area ->
                 when (enemy.board.boardPointValues[column][index]) {
-                    1 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_one_gold))
-                    2 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_two_gold))
-                    3 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_three_gold))
-                    4 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_four_gold))
-                    5 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_five_gold))
-                    6 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_six_gold))
+                    1 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.one))
+                    2 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.two))
+                    3 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.three))
+                    4 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.four))
+                    5 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.five))
+                    6 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.six))
                     else -> area.setImageDrawable(null)
                 }
             }
         } else {
             enemy.board.allDiceAreas[column].forEachIndexed { index, area ->
                 when (enemy.board.boardPointValues[column][index]) {
-                    1 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_one_silver))
-                    2 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_two_silver))
-                    3 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_three_silver))
-                    4 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_four_silver))
-                    5 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_five_silver))
-                    6 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.icon_dice_six_silver))
+                    1 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.one))
+                    2 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.two))
+                    3 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.three))
+                    4 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.four))
+                    5 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.five))
+                    6 -> area.setImageDrawable(AppCompatResources.getDrawable(this, R.drawable.six))
                     else -> area.setImageDrawable(null)
                 }
             }
