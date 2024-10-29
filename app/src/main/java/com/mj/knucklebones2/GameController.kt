@@ -1,7 +1,6 @@
 package com.mj.knucklebones2
 
 import com.mj.knucklebones2.Activity.GameBoardActivity
-import com.mj.knucklebones2.Models.Board
 import com.mj.knucklebones2.Models.Player
 import kotlin.random.Random
 

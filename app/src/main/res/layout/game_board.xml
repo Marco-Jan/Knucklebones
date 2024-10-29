@@ -56,253 +56,251 @@
 
     </FrameLayout>
 
+    <LinearLayout
+        android:id="@+id/computer_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/roll_dice_panel_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/background_color"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center"
+        >
+
         <LinearLayout
-            android:id="@+id/computer_board"
+            android:id="@+id/computer_column_one"
+            android:layout_width="80dp"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/dice_columns_silver">
+            <ImageView
+                android:id="@+id/computer_dice_one_one"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+            <ImageView
+                android:id="@+id/computer_dice_one_two"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+            <ImageView
+                android:id="@+id/computer_dice_one_three"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/computer_column_two"
+            android:layout_width="80dp"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/dice_columns_silver">
+
+            <ImageView
+                android:id="@+id/computer_dice_two_one"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+            <ImageView
+                android:id="@+id/computer_dice_two_two"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+            <ImageView
+                android:id="@+id/computer_dice_two_three"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/computer_column_three"
+            android:layout_width="80dp"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/dice_columns_silver">
+
+            <ImageView
+                android:id="@+id/computer_dice_three_one"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+            <ImageView
+                android:id="@+id/computer_dice_three_two"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+            <ImageView
+                android:id="@+id/computer_dice_three_three"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/game_infos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/computer_board"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/computer_stats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/roll_dice_panel_top"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:background="@color/background_color"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
+            android:text="@string/computer_points"
+            android:textSize="24sp"
+            android:textColor="@color/primary_text"
             android:gravity="center"
-            >
+            android:background="@color/background_color"/>
 
-            <LinearLayout
-                android:id="@+id/computer_column_one"
-                android:layout_width="80dp"
-                android:layout_height="220dp"
-                android:orientation="vertical"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:background="@drawable/dice_columns_silver">
-                <ImageView
-                    android:id="@+id/computer_dice_one_one"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-                <ImageView
-                    android:id="@+id/computer_dice_one_two"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-                <ImageView
-                    android:id="@+id/computer_dice_one_three"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/computer_column_two"
-                android:layout_width="80dp"
-                android:layout_height="220dp"
-                android:orientation="vertical"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:background="@drawable/dice_columns_silver">
-
-                <ImageView
-                    android:id="@+id/computer_dice_two_one"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-                <ImageView
-                    android:id="@+id/computer_dice_two_two"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-                <ImageView
-                    android:id="@+id/computer_dice_two_three"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/computer_column_three"
-                android:layout_width="80dp"
-                android:layout_height="220dp"
-                android:orientation="vertical"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:background="@drawable/dice_columns_silver">
-
-                <ImageView
-                    android:id="@+id/computer_dice_three_one"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-                <ImageView
-                    android:id="@+id/computer_dice_three_two"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-                <ImageView
-                    android:id="@+id/computer_dice_three_three"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-            </LinearLayout>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/game_infos"
+        <TextView
+            android:id="@+id/player_stats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/computer_board"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:orientation="vertical">
+            android:text="@string/player_points"
+            android:textSize="24sp"
+            android:textColor="@color/button_text"
+            android:gravity="center"
+            android:background="@color/gray"/>
 
-            <TextView
-                android:id="@+id/computer_stats"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/computer_points"
-                android:textSize="24sp"
-                android:textColor="@color/primary_text"
-                android:gravity="center"
-                android:background="@color/background_color"/>
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/player_stats"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/player_points"
-                android:textSize="24sp"
-                android:textColor="@color/button_text"
-                android:gravity="center"
-                android:background="@color/gray"/>
-
-        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/player_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/game_infos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="20dp"
+        android:background="@color/gray"
+        android:gravity="center">
 
         <LinearLayout
-            android:id="@+id/player_board"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/game_infos"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:padding="20dp"
-            android:background="@color/gray"
-            android:gravity="center">
+            android:id="@+id/player_column_one"
+            android:layout_width="80dp"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/dice_columns_gold">
+            <ImageView
+                android:id="@+id/player_dice_one_one"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+            <ImageView
+                android:id="@+id/player_dice_one_two"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+            <ImageView
+                android:id="@+id/player_dice_one_three"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
 
-            <LinearLayout
-                android:id="@+id/player_column_one"
-                android:layout_width="80dp"
-                android:layout_height="220dp"
-                android:orientation="vertical"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:background="@drawable/dice_columns_gold">
-                <ImageView
-                    android:id="@+id/player_dice_one_one"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-                <ImageView
-                    android:id="@+id/player_dice_one_two"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-                <ImageView
-                    android:id="@+id/player_dice_one_three"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/player_column_two"
-                android:layout_width="80dp"
-                android:layout_height="220dp"
-                android:orientation="vertical"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:background="@drawable/dice_columns_gold">
-
-                <ImageView
-                    android:id="@+id/player_dice_two_one"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-                <ImageView
-                    android:id="@+id/player_dice_two_two"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-                <ImageView
-                    android:id="@+id/player_dice_two_three"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/player_column_three"
-                android:layout_width="80dp"
-                android:layout_height="220dp"
-                android:orientation="vertical"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:background="@drawable/dice_columns_gold">
-
-                <ImageView
-                    android:id="@+id/player_dice_three_one"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-                <ImageView
-                    android:id="@+id/player_dice_three_two"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-                <ImageView
-                    android:id="@+id/player_dice_three_three"
-                    android:contentDescription="@string/dice_area"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/dice_area" />
-            </LinearLayout>
         </LinearLayout>
+        <LinearLayout
+            android:id="@+id/player_column_two"
+            android:layout_width="80dp"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/dice_columns_gold">
+
+            <ImageView
+                android:id="@+id/player_dice_two_one"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+            <ImageView
+                android:id="@+id/player_dice_two_two"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+            <ImageView
+                android:id="@+id/player_dice_two_three"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/player_column_three"
+            android:layout_width="80dp"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/dice_columns_gold">
+
+            <ImageView
+                android:id="@+id/player_dice_three_one"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+            <ImageView
+                android:id="@+id/player_dice_three_two"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+            <ImageView
+                android:id="@+id/player_dice_three_three"
+                android:contentDescription="@string/dice_area"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dice_area" />
+        </LinearLayout>
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/roll_dice_panel_bottom"

@@ -33,8 +33,8 @@ class GameBoardActivity: AppCompatActivity() {
         binding = GameBoardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val computerName = intent.getStringExtra("COMPUTER_NAME")!!
-        val playerName = intent.getStringExtra("PLAYER_NAME")!!
+        val computerName = intent.getStringExtra("COMPUTER_NAME")?: ""
+        val playerName = intent.getStringExtra("PLAYER_NAME")?: ""
         isTwoPlayerGame = intent.getBooleanExtra("IS_TWO_PLAYER_GAME", false)
         gameDifficulty = intent.getStringExtra("DIFFICULTY")!!
 
